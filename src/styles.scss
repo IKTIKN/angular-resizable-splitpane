@@ -1,1 +1,95 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --background: white;
+    --text-color-primary: black;
+    --text-color-secondary: #000000b3;
+    --gutter-color: #f0f0f0;
+    --bright-blue-500: #0546ff;
+    --bright-blue-700: #0032e6;
+    --bright-blue-900: #0000cc;
+    --electric-violet: #8514f5;
+    --vivid-pink: #f637e3;
+    --hot-red-500: #f11653;
+    --hot-red-700: #cb084f;
+    --hot-red-900: #940047;
+    --orange-red: #fa2c05;
+    --red-to-pink-to-purple-horizontal-gradient: linear-gradient(90deg,
+            var(--orange-red) 0%,
+            var(--vivid-pink) 50%,
+            var(--electric-violet) 100%);
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @media (prefers-color-scheme: dark) {
+        --background: #111111;
+        --text-color-primary: white;
+        --text-color-secondary: #ffffffb3;
+        --gutter-color: #181818;
+    }
+    
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+}
+
+button {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: var(--bright-blue-500);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--bright-blue-700);
+}
+
+button:active {
+    background-color: var(--bright-blue-900);
+}
+
+button.active {
+    background-color: var(--hot-red-500);
+}
+
+button.active:hover {
+    background-color: var(--hot-red-700);
+}
+
+button.active:active {
+    background-color: var(--hot-red-900);
+}
+
+h1 {
+    font-weight: 500;
+    color: var(--text-color-primary);
+    letter-spacing: -0.125rem;
+    margin: 0;
+}
+
+p {
+    color: var(--text-color-secondary);
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.divider {
+    background: var(--red-to-pink-to-purple-horizontal-gradient);
+    height: 1px;
+    width: 100%;
+}
+
+.as-split-gutter {
+    background-color: var(--gutter-color) !important;
+}

@@ -1,0 +1,18 @@
+.split-area-container {
+    height: 100%;
+}
+
+.controls-container {
+    padding: 16px;
+}
+
+.big-character-container {
+    font-size: 100px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+    color: var(--text-color-primary);
+}
